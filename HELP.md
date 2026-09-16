@@ -1,5 +1,7 @@
 # Getting Started
 
+Nota: la rama main se mantiene como base estable del proyecto.
+
 ### Reference Documentation
 For further reference, please consider the following sections:
 

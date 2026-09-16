@@ -1,13 +1,26 @@
 package com.quiz.c4h142.dto;
 
 import com.quiz.c4h142.data.EstadoPaquete;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
 
 public class PaqueteRequestDto {
 
+	@NotBlank
 	private String codigoRastreo;
+
+	@NotBlank
 	private String descripcion;
+
+	@NotNull
+	@Positive
 	private Double pesoKg;
+
+	@NotNull
 	private EstadoPaquete estado;
+
+	@NotNull
 	private Long clienteId;
 
 	public PaqueteRequestDto() {
